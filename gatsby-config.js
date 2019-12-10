@@ -21,5 +21,12 @@ module.exports = {
     },
     'gatsby-plugin-sass',
     'gatsby-plugin-offline',
+    {
+      resolve: 'gatsby-source-strapi',
+      options: {
+        apiURL: config.strapiUrl,
+        contentTypes: [`project`, `follow`, `link`],
+      },
+    },
   ],
 };

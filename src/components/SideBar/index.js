@@ -4,9 +4,8 @@ import Header from './Header';
 import Nav from './Nav';
 import TopNav from './TopNav';
 import config from '../../../config';
-const pic = require('../../assets/images/avatar.png');
 
-export default function SideBar({ sections = [] }) {
+export default function SideBar({ sections = [], links = [] }) {
   const [headerOpen, toggleHeader] = useState(false);
   return (
     <div className={`${headerOpen ? 'header-visible' : ' '}`}>
@@ -17,24 +16,14 @@ export default function SideBar({ sections = [] }) {
       <div id="header">
         <div className="top">
           <Header
-            avatar={pic}
+            avatar={config.avatar}
             title={config.authorName}
             heading={config.heading}
           />
           <Nav sections={sections} />
         </div>
-        <Footer socialLinks={config.socialLinks} />
+        <Footer socialLinks={links} />
       </div>
-
-      {/* <section id="header">
-        <Header
-          avatar={pic}
-          title={config.authorName}
-          heading={config.heading}
-        />
-        <Nav sections={sections} />
-        <Footer socialLinks={config.socialLinks} />
-      </section> */}
     </div>
   );
 }

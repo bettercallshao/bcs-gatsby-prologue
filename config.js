@@ -1,36 +1,16 @@
+const name = 'Shaoqing Tan';
+
 module.exports = {
-  siteTitle: 'Gatsby Starter Prologue', // <title>
-  manifestName: 'Prologue',
-  manifestShortName: 'Landing', // max 12 characters
+  siteTitle: name,
+  manifestName: name,
+  manifestShortName: name,
   manifestStartUrl: '/',
-  manifestBackgroundColor: '#663399',
-  manifestThemeColor: '#663399',
+  manifestBackgroundColor: '#376b24',
+  manifestThemeColor: '#376b24',
   manifestDisplay: 'standalone',
-  manifestIcon: 'src/assets/img/website-icon.png',
-  pathPrefix: `/gatsby-starter-prologue/`, // This path is subpath of your hosting https://domain/portfolio
-  authorName: 'Anubhav',
-  heading: 'Web Developer',
-  // social
-  socialLinks: [
-    {
-      icon: 'fa-github',
-      name: 'Github',
-      url: 'https://github.com/anubhavsrivastava',
-    },
-    {
-      icon: 'fa-twitter',
-      name: 'Twitter',
-      url: 'https://twitter.com/onlyanubhav',
-    },
-    {
-      icon: 'fa-facebook',
-      name: 'Facebook',
-      url: 'https://facebook.com/theanubhav',
-    },
-    {
-      icon: 'fa-envelope-o',
-      name: 'Email',
-      url: 'mailto:anubhav.srivastava00@gmail.com',
-    },
-  ],
+  manifestIcon: 'src/assets/images/icon.png',
+  authorName: name,
+  avatar: 'https://s.gravatar.com/avatar/46e8382e75b8af4bec507587b26eef9c?s=80',
+  heading: 'Software Cloud Data Engineer',
+  strapiUrl: process.env.STRAPI_URL,
 };
