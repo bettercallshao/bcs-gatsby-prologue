@@ -111,7 +111,7 @@ const IndexPage = ({ data }) => (
           <div className="row">
             <div className="col-4 col-12-mobile">
               <article className="item">
-                <a href="https://shaoqingtan.com/download/resume" className="image fit">
+                <a href="https://cgar.bettercallshao.com/download/resume" className="image fit">
                   <img src={feature} alt="" />
                 </a>
                 <header>
